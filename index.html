@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Willian Tomaselli</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Estilos internos para demonstrar o uso de CSS */
+        body {
+            font-family: "Lato", Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 20px;
+            width: 100%;
+            min-width: 100%;
+            
+            font-family: "Lato";
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+       
+
+        header,
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 5px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #333;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+
+        ul,
+        ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Site!</h1>
+        <p><strong>Desenvolvedor Web &amp; Gamedev</strong> - 17 anos, autodidata</p>
+    </header>
+
+    <!-- Seção "Sobre Mim" demonstrando diversas tags de formatação -->
+    <section id="sobre-mim">
+        <h2>Sobre Mim</h2>
+        <p>
+            Olá! Meu nome é <b>Willian Vitor Correa Tomaselli</b> e sou um <i>desenvolvedor web</i> e <em>gamedev</em>
+            apaixonado por tecnologia.
+            Estou na jornada autodidata há algum tempo e, aos <sup>17</sup> anos, já crio projetos incríveis!
+        </p>
+        <hr>
+        <p>
+            Este parágrafo contém vários exemplos de formatação:
+            <br>
+            <b>Negrito</b>, <i>itálico</i>, <strong>texto importante</strong>, <em>ênfase</em>, <mark>destacado</mark>,
+            <small>texto menor</small>,
+            <del>texto deletado</del>, <ins>texto inserido</ins>, <sub>subscrito</sub> e <sup>sobrescrito</sup>.
+        </p>
+        <br>
+        <blockquote cite="https://exemplo.com">
+            <p>"A prática leva à perfeição." - Uma citação inspiradora</p>
+        </blockquote>
+        <p>
+            Usando a tag <q>q</q> para uma citação curta:
+            <q cite="https://exemplo.com">Nunca pare de aprender.</q>
+        </p>
+        <p>
+            Exemplo de abreviação: <abbr title="HyperText Markup Language">HTML</abbr> é essencial para o
+            desenvolvimento web.
+        </p>
+        <address>
+            Contato: <a href="mailto:seunome@example.com">willian@example.com</a><br>
+            Guaramirim, Brasil
+        </address>
+        <p>
+            Exemplo de citação de obra: <cite>"O Guia do Mochileiro das Galáxias"</cite>
+        </p>
+        <p>
+            Exemplo de BDO: <bdo dir="rtl">Texto invertido</bdo>
+        </p>
+        <!-- comentario -->
+    </section>
+
+    <!-- Seção de link e imagens -->
+    <section id="links-imagens">
+        <h2>Links e Imagens</h2>
+        <p>
+            Confira meu perfil no
+            <a href="https://github.com/willdev16" target="_blank">GitHub</a>
+            e conecte-se comigo no
+            <a href="https://www.linkedin.com/in/willian-tomaselli-405291329/" target="_blank">LinkedIn</a>.
+        </p>
+        <p>
+            Clique na imagem abaixo para visitar meu portfólio:
+        </p>
+        <a href="https://seuportfolio.com" target="_blank">
+            <img src="https://th.bing.com/th/id/OIP.Ctr-OnUAQay8MRsPir4x9AAAAA?rs=1&pid=ImgDetMain" alt="cavera do rock"
+                style="width:150px; height:150px; border-radius:50%;">
+        </a>
+    </section>
+
+    <!-- Seção de Listas -->
+    <section id="listas">
+        <h2>Minhas Habilidades</h2>
+        <h3>Desenvolvimento Web</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>CSharp</li>
+        </ul>
+        <h3>Gamedev</h3>
+        <ol>
+            <li>Unity</li>
+            <li>Art 2D</li>
+            <li>Music Composer</li>
+        </ol>
+    </section>
+
+    <!-- Seção de tabelas -->
+    <section id="tabela">
+        <h2>Projetos Recentes</h2>
+        <table>
+            <tr>
+                <th>Projeto</th>
+                <th>Área</th>
+                <th>Ano</th>
+            </tr>
+            <tr>
+                <td>Site Portfólio</td>
+                <td>Web</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Last Ember</td>
+                <td>Gamedev</td>
+                <td>2025</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Seção de form que nao funciona -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
+        <form method="post" action="#">
+            <fieldset>
+                <legend>Envie uma Mensagem</legend>
+                <p>
+                    <label for="nome">Nome:</label><br>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="seuemail@example.com">
+                </p>
+                <p>
+                    <label for="idade">Idade:</label><br>
+                    <input type="number" id="idade" name="idade" min="10" max="100">
+                </p>
+                <p>
+                    <label>Interesses:</label><br>
+                    <input type="checkbox" id="web" name="interesse" value="web">
+                    <label for="web">Desenvolvimento Web</label><br>
+                    <input type="checkbox" id="gamedev" name="interesse" value="gamedev">
+                    <label for="gamedev">Desenvolvimento de Jogos</label>
+                </p>
+                <p>
+                    <label>Gênero:</label><br>
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </p>
+                <p>
+                    <label for="satisfacao">Nível de Satisfação:</label><br>
+                    <input type="range" id="satisfacao" name="satisfacao" min="0" max="10">
+                </p>
+                <p>
+                    <label for="mensagem">Mensagem:</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" cols="50"
+                        placeholder="Digite sua mensagem"></textarea>
+                </p>
+                <p>
+                    <input type="reset" value="Limpar">
+                    <input type="submit" value="Enviar">
+                </p>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Willian Tomaselli. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
