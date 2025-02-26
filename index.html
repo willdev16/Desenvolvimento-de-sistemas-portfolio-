@@ -1,223 +1,218 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Willian Tomaselli</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <style>
-        /* Estilos internos para demonstrar o uso de CSS */
-        body {
-            font-family: "Lato", Arial, sans-serif;
-            background-color: #f0f0f0;
-            margin: 20px;
-            width: 100%;
-            min-width: 100%;
-            
-            font-family: "Lato";
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-       
-
-        header,
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        section {
-            background-color: #fff;
-            margin: 10px 0;
-            padding: 15px;
-            border-radius: 5px;
-        }
-
-        table,
-        th,
-        td {
-            border: 1px solid #333;
-            border-collapse: collapse;
-            padding: 8px;
-            text-align: center;
-        }
-
-        ul,
-        ol {
-            margin-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Willian Tomaselli - Portfólio Profissional</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+  <!-- Fontes: Montserrat para títulos e Lato para corpo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <header>
-        <h1>Bem-vindo ao Meu Site!</h1>
-        <p><strong>Desenvolvedor Web &amp; Gamedev</strong> - 17 anos, autodidata</p>
-    </header>
-
-    <!-- Seção "Sobre Mim" demonstrando diversas tags de formatação -->
-    <section id="sobre-mim">
-        <h2>Sobre Mim</h2>
-        <p>
-            Olá! Meu nome é <b>Willian Vitor Correa Tomaselli</b> e sou um <i>desenvolvedor web</i> e <em>gamedev</em>
-            apaixonado por tecnologia.
-            Estou na jornada autodidata há algum tempo e, aos <sup>17</sup> anos, já crio projetos incríveis!
-        </p>
-        <hr>
-        <p>
-            Este parágrafo contém vários exemplos de formatação:
-            <br>
-            <b>Negrito</b>, <i>itálico</i>, <strong>texto importante</strong>, <em>ênfase</em>, <mark>destacado</mark>,
-            <small>texto menor</small>,
-            <del>texto deletado</del>, <ins>texto inserido</ins>, <sub>subscrito</sub> e <sup>sobrescrito</sup>.
-        </p>
-        <br>
-        <blockquote cite="https://exemplo.com">
-            <p>"A prática leva à perfeição." - Uma citação inspiradora</p>
-        </blockquote>
-        <p>
-            Usando a tag <q>q</q> para uma citação curta:
-            <q cite="https://exemplo.com">Nunca pare de aprender.</q>
-        </p>
-        <p>
-            Exemplo de abreviação: <abbr title="HyperText Markup Language">HTML</abbr> é essencial para o
-            desenvolvimento web.
-        </p>
-        <address>
-            Contato: <a href="mailto:seunome@example.com">willian@example.com</a><br>
-            Guaramirim, Brasil
-        </address>
-        <p>
-            Exemplo de citação de obra: <cite>"O Guia do Mochileiro das Galáxias"</cite>
-        </p>
-        <p>
-            Exemplo de BDO: <bdo dir="rtl">Texto invertido</bdo>
-        </p>
-        <!-- comentario -->
+  <!-- Tela de Carregamento -->
+  <div id="loading-screen">
+    <div class="spinner"></div>
+    <p>Carregando Portfólio...</p>
+  </div>
+  
+  <header>
+    <div class="container header-container">
+      <h1>Willian Tomaselli</h1>
+      <p class="subtitle">Desenvolvedor Web &amp; Gamedev – 17 anos, autodidata</p>
+      <div class="header-buttons">
+        <button id="theme-toggle">Tema Escuro</button>
+        <a class="btn-cv" href="cv.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </header>
+  
+  <main class="container">
+    <!-- Resumo Profissional -->
+    <section id="resumo" class="card">
+      <h2>Resumo Profissional</h2>
+      <p>
+        Sou um profissional apaixonado por tecnologia e inovação. Com experiência em projetos pessoais e jogos, 
+        destaco-me pela criatividade, autonomia e capacidade de adaptação, sou programador e líder da Sidewall Studios, um estúdio indie de jogos.
+      </p>
+    </section>
+    
+    <!-- Sobre Mim -->
+    <section id="sobre-mim" class="card">
+      <h2>Sobre Mim</h2>
+      <p>
+        Olá! Meu nome é <strong>Willian Vitor Correa Tomaselli</strong> e sou um desenvolvedor web e gamedev que iniciou sua jornada 
+        de forma autodidata. Aos <sup>17</sup> anos, já desenvolvo projetos desafiadores e inovadores.
+      </p>
+      <hr>
+      <blockquote cite="https://exemplo.com">
+        <p>"A prática leva à perfeição." – Uma citação inspiradora</p>
+      </blockquote>
+      <address>
+        Contato: <a href="mailto:williantomaselli@gmail.com">willian@example.com</a><br>
+        Guaramirim, Brasil
+      </address>
     </section>
 
-    <!-- Seção de link e imagens -->
-    <section id="links-imagens">
-        <h2>Links e Imagens</h2>
-        <p>
-            Confira meu perfil no
-            <a href="https://github.com/willdev16" target="_blank">GitHub</a>
-            e conecte-se comigo no
-            <a href="https://www.linkedin.com/in/willian-tomaselli-405291329/" target="_blank">LinkedIn</a>.
-        </p>
-        <p>
-            Clique na imagem abaixo para visitar meu portfólio:
-        </p>
-        <a href="https://seuportfolio.com" target="_blank">
-            <img src="https://th.bing.com/th/id/OIP.Ctr-OnUAQay8MRsPir4x9AAAAA?rs=1&pid=ImgDetMain" alt="cavera do rock"
-                style="width:150px; height:150px; border-radius:50%;">
-        </a>
-    </section>
-
-    <!-- Seção de Listas -->
-    <section id="listas">
-        <h2>Minhas Habilidades</h2>
-        <h3>Desenvolvimento Web</h3>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
+    <!-- Habilidades -->
+    <section id="habilidades" class="card">
+      <h2>Minhas Habilidades</h2>
+      <div class="skills">
+        <div class="skill">
+          <h3>Desenvolvimento Web</h3>
+          <ul>
+            <li>HTML5 &amp; CSS3</li>
             <li>JavaScript</li>
-            <li>CSharp</li>
-        </ul>
-        <h3>Gamedev</h3>
-        <ol>
-            <li>Unity</li>
-            <li>Art 2D</li>
-            <li>Music Composer</li>
-        </ol>
+            <li>Git</li>
+            <li>C#</li>
+          </ul>
+        </div>
+        <div class="skill">
+          <h3>Gamedev</h3>
+          <ol>
+            <li>Unity 3D</li>
+            <li>Design 2D</li>
+            <li>Composição Musical</li>
+          </ol>
+        </div>
+      </div>
     </section>
-
-    <!-- Seção de tabelas -->
-    <section id="tabela">
-        <h2>Projetos Recentes</h2>
-        <table>
-            <tr>
-                <th>Projeto</th>
-                <th>Área</th>
-                <th>Ano</th>
-            </tr>
-            <tr>
-                <td>Site Portfólio</td>
-                <td>Web</td>
-                <td>2023</td>
-            </tr>
-            <tr>
-                <td>Last Ember</td>
-                <td>Gamedev</td>
-                <td>2025</td>
-            </tr>
-        </table>
+    
+    <!-- Experiência Profissional -->
+    <section id="experiencia" class="card">
+      <h2>Experiência Profissional</h2>
+      <ul class="timeline">
+        <li>
+          <h3>Projeto Freelancer</h3>
+          <span class="date">2023</span>
+          <p>Desenvolvimento de sites responsivos para pequenos negócios, priorizando experiência do usuário e performance.</p>
+        </li>
+        <li>
+          <h3>Colaboração em Games</h3>
+          <span class="date">2022</span>
+          <p>Contribuições em projetos colaborativos utilizando boas práticas de código.</p>
+        </li>
+      </ul>
     </section>
-
-    <!-- Seção de form que nao funciona -->
-    <section id="contato">
-        <h2>Entre em Contato</h2>
-        <form method="post" action="#">
-            <fieldset>
-                <legend>Envie uma Mensagem</legend>
-                <p>
-                    <label for="nome">Nome:</label><br>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome">
-                </p>
-                <p>
-                    <label for="email">E-mail:</label><br>
-                    <input type="email" id="email" name="email" placeholder="seuemail@example.com">
-                </p>
-                <p>
-                    <label for="idade">Idade:</label><br>
-                    <input type="number" id="idade" name="idade" min="10" max="100">
-                </p>
-                <p>
-                    <label>Interesses:</label><br>
-                    <input type="checkbox" id="web" name="interesse" value="web">
-                    <label for="web">Desenvolvimento Web</label><br>
-                    <input type="checkbox" id="gamedev" name="interesse" value="gamedev">
-                    <label for="gamedev">Desenvolvimento de Jogos</label>
-                </p>
-                <p>
-                    <label>Gênero:</label><br>
-                    <input type="radio" id="masculino" name="genero" value="masculino">
-                    <label for="masculino">Masculino</label><br>
-                    <input type="radio" id="feminino" name="genero" value="feminino">
-                    <label for="feminino">Feminino</label>
-                </p>
-                <p>
-                    <label for="satisfacao">Nível de Satisfação:</label><br>
-                    <input type="range" id="satisfacao" name="satisfacao" min="0" max="10">
-                </p>
-                <p>
-                    <label for="mensagem">Mensagem:</label><br>
-                    <textarea id="mensagem" name="mensagem" rows="4" cols="50"
-                        placeholder="Digite sua mensagem"></textarea>
-                </p>
-                <p>
-                    <input type="reset" value="Limpar">
-                    <input type="submit" value="Enviar">
-                </p>
-            </fieldset>
-        </form>
+    
+    <!-- Certificações -->
+    <section id="certificacoes" class="card">
+      <h2>Certificações</h2>
+      <ul class="certs">
+        <li>
+          <strong>Curso de Desenvolvimento Web</strong> – Plataforma XYZ, 2023
+        </li>
+        <li>
+          <strong>Certificação Unity</strong> – Unity Technologies, 2022
+        </li>
+      </ul>
     </section>
+    
+    <!-- Projetos Recentes -->
+    <section id="projetos" class="card">
+      <h2>Projetos Recentes</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Projeto</th>
+            <th>Área</th>
+            <th>Ano</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Site Portfólio</td>
+            <td>Web</td>
+            <td>2023</td>
+          </tr>
+          <tr>
+            <td>Last Ember</td>
+            <td>Gamedev</td>
+            <td>2025</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+    <!-- Depoimentos -->
+    <section id="depoimentos" class="card">
+      <h2>Depoimentos</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <p>"Willian demonstra incrível capacidade de aprender e se adaptar. Seu trabalho é sempre inovador e bem executado!"</p>
+          <span>- Cliente Satisfeito</span>
+        </div>
+        <div class="testimonial">
+          <p>"Um jovem talentoso com visão diferenciada. Suas soluções criativas fazem a diferença em cada projeto."</p>
+          <span>- Parceiro de Projeto</span>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Serviços -->
+    <section id="servicos" class="card">
+      <h2>Serviços Oferecidos</h2>
+      <ul class="servicos-list">
+        <li>Desenvolvimento e Design de Websites</li>
+        <li>Criação de Jogos 2D e 3D</li>
+        <li>Consultoria em UX/UI</li>
+        <li>Suporte e Manutenção de Sistemas</li>
+      </ul>
+    </section>
+    
+    <!-- Contato -->
+    <section id="contato" class="card">
+      <h2>Entre em Contato</h2>
+      <form method="post" action="#">
+        <fieldset>
+          <legend>Envie uma Mensagem</legend>
+          <p>
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome">
+          </p>
+          <p>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" placeholder="seuemail@example.com">
+          </p>
+          <p>
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem"></textarea>
+          </p>
+          <p class="form-buttons">
+            <input type="reset" value="Limpar">
+            <input type="submit" value="Enviar">
+          </p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 Willian Tomaselli. Todos os direitos reservados.</p>
+  </footer>
+  
+  <script>
+    // Tela de carregamento - remove após um pequeno delay
+    window.addEventListener('load', () => {
+      const loadingScreen = document.getElementById('loading-screen');
+      setTimeout(() => {
+        loadingScreen.classList.add('fade-out');
+        setTimeout(() => {
+          loadingScreen.style.display = 'none';
+        }, 800);
+      }, 1000); // Delay de 1 segundo antes de iniciar o fade-out
+    });
 
-    <footer>
-        <p>&copy; 2023 Willian Tomaselli. Todos os direitos reservados.</p>
-    </footer>
+    // Alterna entre tema claro e escuro
+    const themeToggle = document.getElementById('theme-toggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-theme');
+      themeToggle.textContent = document.body.classList.contains('dark-theme') ? 'Tema Claro' : 'Tema Escuro';
+    });
+  </script>
 </body>
-
 </html>
